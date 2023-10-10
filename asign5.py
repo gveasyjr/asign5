@@ -13,7 +13,7 @@ def mean_stat(nums):
     """
 
     >>> mean_stat([5, 3, 17])
-    8.33
+    8.333333333333334
 
     >>> mean_stat([5])
     5.0
