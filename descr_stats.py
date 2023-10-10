@@ -11,25 +11,37 @@ import sys
 
 def mean_stat(nums):
     """
-    Calculates the mean of the given list of numbers.
+    >>> mean_stat([5, 3, 17])
+    8.333333333333334
 
-    >>> mean_stat([1, 3, 5])
-    3.0
-    
-    >>> mean_stat([2, 8, 6, 4])
+    >>> mean_stat([5])
     5.0
+
+    >>> mean_stat([-1, 4, 0.5, 2.5])
+    1.0
     """
     return sum(nums) / len(nums)
 
 
+
 def median_stat(nums):
+    """
+    Calculates the median of the given list of numbers.
+
+    >>> median_stat([1, 3, 5])
+    3
+    
+    >>> median_stat([2, 8, 6, 4])
+    5
+    """
     nums.sort()
     cnt = len(nums)
-    mid = int(cnt/2)
-    if cnt%2 == 0:
-        return (nums[mid] + nums[mid-1])/2
+    mid = int(cnt / 2)
+    if cnt % 2 == 0:
+        return (nums[mid] + nums[mid - 1]) / 2
     else:
         return nums[mid]
+
     
     
 li1 = [1, 3, 5]
