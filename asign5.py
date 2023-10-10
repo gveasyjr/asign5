@@ -28,6 +28,20 @@ def mean_stat(nums):
 
 
 def median_stat(nums):
+    """
+
+    >>> median_stat([5, 3, 17])
+    5
+
+    >>> median_stat([-7])
+    -7
+
+    >>> median_stat([11, 8, 5, 2])
+    6.5
+
+    >>> median_stat([-1, 4, .5, 2.5])
+    1.75
+    """
     
     nums.sort()
     cnt = len(nums)
