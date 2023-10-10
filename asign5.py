@@ -20,9 +20,10 @@ def mean_stat(nums):
     5.0
 
     >>> mean_stat([-1, 4, .5, 2.5])
-    1.0
+    1.5
     """
     return sum(nums) / len(nums)
+
 
 
 
