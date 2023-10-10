@@ -11,7 +11,6 @@ import sys
 
 def mean_stat(nums):
     """
-    Calculates the mean of the given list of numbers.
 
     >>> mean_stat([5, 3, 17])
     8.33
@@ -22,7 +21,7 @@ def mean_stat(nums):
     >>> mean_stat([-1, 4, .5, 2.5])
     1.5
     """
-    return sum(nums) / len(nums)
+    return round(sum(nums) / len(nums), 2)
 
 
 
