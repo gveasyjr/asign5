@@ -19,7 +19,7 @@ def mean_stat(nums):
     5.0
 
     >>> mean_stat([-1, 4, .5, 2.5])
-    1.5
+    1.0
     """
     return round(sum(nums) / len(nums), 2)
 
