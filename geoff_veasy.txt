@@ -22,3 +22,56 @@ ok
 3 tests in 3 items.
 3 passed and 0 failed.
 Test passed.
+Command line: descr_stats <"mean | median">
+Trying:
+    mean_stat([5, 3, 17])
+Expecting:
+    8.333333333333334
+ok
+Trying:
+    mean_stat([5])
+Expecting:
+    5.0
+ok
+Trying:
+    mean_stat([-1, 4, .5, 2.5])
+Expecting:
+    1.5
+ok
+Trying:
+    median_stat([5, 3, 17])
+Expecting:
+    5
+ok
+Trying:
+    median_stat([-7])
+Expecting:
+    -7
+ok
+Trying:
+    median_stat([11, 8, 5, 2])
+Expecting:
+    6.5
+ok
+Trying:
+    median_stat([-1, 4, .5, 2.5])
+Expecting:
+    1.75
+**********************************************************************
+File "/Users/testenv/Documents/GitHub/asign5/asign5.py", line 42, in asign5.median_stat
+Failed example:
+    median_stat([-1, 4, .5, 2.5])
+Expected:
+    1.75
+Got:
+    1.5
+1 items had no tests:
+    asign5
+1 items passed all tests:
+   3 tests in asign5.mean_stat
+**********************************************************************
+1 items had failures:
+   1 of   4 in asign5.median_stat
+7 tests in 3 items.
+6 passed and 1 failed.
+***Test Failed*** 1 failures.

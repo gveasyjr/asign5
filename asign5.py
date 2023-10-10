@@ -40,7 +40,7 @@ def median_stat(nums):
     6.5
 
     >>> median_stat([-1, 4, .5, 2.5])
-    1.75
+    1.5
     """
     
     nums.sort()
