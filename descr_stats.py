@@ -20,6 +20,7 @@ def mean_stat(nums):
     >>> mean_stat([-1, 4, 0.5, 2.5])
     1.0
     """
+
     return sum(nums) / len(nums)
 
 
@@ -28,12 +29,19 @@ def median_stat(nums):
     """
     Calculates the median of the given list of numbers.
 
-    >>> median_stat([1, 3, 5])
-    3
-    
-    >>> median_stat([2, 8, 6, 4])
+    >>> median_stat([5, 3, 17])
     5
+
+    >>> median_stat([-7])
+    -7
+
+    >>> median_stat([11, 8, 5, 2])
+    6.5
+
+    >>> median_stat([-1, 4, 0.5, 2.5])
+    1.25
     """
+    
     nums.sort()
     cnt = len(nums)
     mid = int(cnt / 2)
